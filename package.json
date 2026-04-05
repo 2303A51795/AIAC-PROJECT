@@ -1,7 +1,13 @@
 {
-  "name": "proctorclay-ai",
+  "name": "aiac-project-examshield",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "AI-Powered Smart Examination Integrity System - AIAC PROJECT",
+  "author": "VIGHNESH BACHWAL <2303A51795>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2303A51795/AIAC-PROJECT.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",

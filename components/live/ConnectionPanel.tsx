@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Wifi, Link as LinkIcon, Info, Camera, Smartphone, RefreshCw, Monitor } from 'lucide-react';
 import { ClayCard } from '../ClayCard';
 import { ClayButton } from '../ClayButton';
-import { aiService, CameraDevice } from '../../frontend/services/aiService';
+import { aiService, CameraDevice } from '../../services/aiService';
 
 interface ConnectionPanelProps {
   onConnect: (url: string, source: 'direct' | 'ip') => void;

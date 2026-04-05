@@ -1,13 +1,26 @@
-# 🎓 ExamShield AI
+# 🎓 ExamShield AI - AIAC PROJECT
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-embedded--system--project.vercel.app-6C5CE7?style=for-the-badge&logo=vercel)](https://embedded-system-project.vercel.app/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-rohithdgrr.github.io/Portfolio-FF6B6B?style=for-the-badge&logo=github)](https://rohithdgrr.github.io/Protfolio/)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-2303A51795%2FAIAC--PROJECT-6C5CE7?style=for-the-badge&logo=github)](https://github.com/2303A51795/AIAC-PROJECT)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-8B5CF6?style=for-the-badge)](https://ultralytics.com/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/)
 
 > **AI-Powered Smart Examination Integrity System** using Embedded Camera Processing, Mobile Integration, and a Web-Based Monitoring Platform for Automated Malpractice Detection in Educational Institutions.
+
+---
+
+## 📌 Project Information
+
+| Field | Details |
+|-------|---------|
+| **Project Name** | AIAC PROJECT - ExamShield AI |
+| **Author** | VIGHNESH BACHWAL |
+| **Roll Number** | 2303A51795 |
+| **Section** | BATCH 12 |
+| **Year** | 3RD YEAR CSE BTECH |
+| **GitHub Repository** | [https://github.com/2303A51795/AIAC-PROJECT](https://github.com/2303A51795/AIAC-PROJECT) |
 
 ---
 
@@ -52,7 +65,7 @@
   3. **Prohibited Item Detection** - Real-time detection of cheating materials
 
 ### 📱 Multi-Platform Input
-- **Mobile Camera Connection** - Use any smartphone as a wireless IP camera
+- **Mobile Camera Connection** - Use any smartphone as a wireless IP camera (DroidCam/IP Webcam)
 - **Video Upload** - Process pre-recorded examination footage
 - **Direct Webcam** - Built-in laptop camera support
 
@@ -67,39 +80,39 @@
 ## 🏗️ System Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    VIDEO INPUT SOURCES                   │
-│  ┌────────────────────┐      ┌────────────────────┐      │
-│  │  Mobile Camera     │      │  Video Upload      │      │
-│  │  (IP Webcam App)   │      │  (MP4/AVI/MOV)     │      │
-│  └──────────┬─────────┘      └──────────┬─────────┘      │
-└─────────────┼──────────────────────────┼────────────────┘
-              │                          │
-              ▼                          ▼
-┌─────────────────────────────────────────────────────────┐
-│              EMBEDDED AI PROCESSING ENGINE               │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │
-│  │ Phase 1:     │  │ Phase 2:     │  │ Phase 3:     │   │
-│  │ Head Count   │→ │ Behavior     │→ │ Prohibited   │   │
-│  │ (YOLOv8)     │  │ Analysis     │  │ Items        │   │
-│  │              │  │ (MediaPipe)  │  │ (YOLOv8)     │   │
-│  └──────────────┘  └──────────────┘  └──────────────┘   │
-│                          │                              │
-│                          ▼                              │
-│              ┌────────────────────┐                      │
-│              │   Scoring Engine   │                      │
-│              │  & Alert System    │                      │
-│              └────────────────────┘                      │
-└─────────────────────────────────────────────────────────┘
-                          │
-                          ▼
-┌─────────────────────────────────────────────────────────┐
-│              WEB APPLICATION (React + FastAPI)           │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐   │
-│  │ Live Monitor │  │   Upload     │  │   Reports    │   │
-│  │   Dashboard  │  │   & Analyze  │  │   History    │   │
-│  └──────────────┘  └──────────────┘  └──────────────┘   │
-└─────────────────────────────────────────────────────────┘
++---------------------------------------------------------+
+|                    VIDEO INPUT SOURCES                   |
+|  +--------------------+      +--------------------+      |
+|  |  Mobile Camera     |      |  Video Upload      |      |
+|  |  (DroidCam/IP Webcam)    |  (MP4/AVI/MOV)     |      |
+|  +---------+----------+      +---------+----------+      |
++------------+---------------------------+-----------------+
+             |                           |
+             v                           v
++---------------------------------------------------------+
+|              EMBEDDED AI PROCESSING ENGINE               |
+|  +------------+  +------------+  +------------+         |
+|  | Phase 1:   |  | Phase 2:   |  | Phase 3:   |         |
+|  | Head Count |->| Behavior   |->| Prohibited |         |
+|  | (YOLOv8)   |  | Analysis   |  | Items      |         |
+|  |            |  | (MediaPipe)|  | (YOLOv8)   |         |
+|  +------------+  +------------+  +------------+         |
+|                        |                                |
+|                        v                                |
+|            +------------------+                         |
+|            |  Scoring Engine  |                         |
+|            | & Alert System   |                         |
+|            +------------------+                         |
++---------------------------------------------------------+
+                        |
+                        v
++---------------------------------------------------------+
+|              WEB APPLICATION (React + Spring Boot)       |
+|  +------------+  +------------+  +------------+         |
+|  | Live Monitor| |   Upload   |  |   Reports  |         |
+|  |  Dashboard  | | & Analyze  |  |   History  |         |
+|  +------------+  +------------+  +------------+         |
++---------------------------------------------------------+
 ```
 
 ---
@@ -109,39 +122,39 @@
 ### Prerequisites
 - **Node.js** 18+ and **npm**
 - **Python** 3.11+
+- **Java** 17+
 - **Git**
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/Rohithdgrr/Embedded-system-project.git
-cd Embedded-system-project
+git clone https://github.com/2303A51795/AIAC-PROJECT.git
+cd AIAC-PROJECT
 
 # Install frontend dependencies
 npm install
 
 # Install AI backend dependencies
 cd ai_backend
+python -m venv venv
+venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 cd ..
 
-# Install backend dependencies
-cd backend
-pip install -r requirements.txt
-cd ..
+# Backend uses Maven wrapper (no installation needed)
 ```
 
 ### Running the Application
 
 ```bash
 # Start all services (Windows)
-start-all.bat
+start-examshield.bat
 
 # Or start individually:
-npm run dev          # Frontend (Vite)
-cd ai_backend && python src/detector.py  # AI Backend
-cd backend && python app.py              # API Backend
+npm run dev                              # Frontend (Vite) - Port 5173
+cd ai_backend && python src/detector.py  # AI Backend - Port 5000
+cd backend && mvnw.cmd spring-boot:run    # Spring Boot Backend - Port 8080
 ```
 
 ---
@@ -151,12 +164,20 @@ cd backend && python app.py              # API Backend
 ### Frontend
 | Technology | Purpose |
 |------------|---------|
-| React 18 | UI Framework |
+| React 19 | UI Framework |
 | TypeScript | Type Safety |
 | Tailwind CSS | Styling |
 | Framer Motion | Animations |
 | Lucide React | Icons |
 | Vite | Build Tool |
+
+### Backend
+| Technology | Purpose |
+|------------|---------|
+| Spring Boot 3.2 | REST API Server |
+| SQLite | Database |
+| JPA/Hibernate | ORM |
+| Maven | Build Tool |
 
 ### AI/ML Backend
 | Technology | Purpose |
@@ -167,13 +188,6 @@ cd backend && python app.py              # API Backend
 | NumPy | Numerical Computing |
 | Flask | API Server |
 
-### Infrastructure
-| Technology | Purpose |
-|------------|---------|
-| Vercel | Frontend Hosting |
-| Render | AI Backend Hosting |
-| SQLite | Database |
-
 ---
 
 ## 📊 Detection Capabilities
@@ -182,25 +196,23 @@ cd backend && python app.py              # API Backend
 
 | Violation Type | Points | Severity |
 |----------------|--------|----------|
-| Phone Detected | 30 | 🔴 High |
-| Chit/Slip Detected | 25 | 🔴 High |
-| Textbook Detected | 30 | 🔴 High |
-| Notebook Detected | 25 | 🟠 Medium |
-| Electronic Device | 20 | 🟠 Medium |
-| Head Turn (Sustained) | 10 | 🟡 Low |
-| Looking at Neighbor | 8 | 🟡 Low |
-| Leaning Toward Other | 10 | 🟠 Medium |
-| Passing Gesture | 15 | 🟠 Medium |
-| Head Count Mismatch | 40 | 🔴 High |
-| Extra Person in Hall | 50 | 🔴 Critical |
+| Phone Detected | 30 | High |
+| Chit/Slip Detected | 25 | High |
+| Textbook Detected | 30 | High |
+| Notebook Detected | 25 | Medium |
+| Electronic Device | 20 | Medium |
+| Head Turn (Sustained) | 10 | Low |
+| Looking at Neighbor | 8 | Low |
+| Leaning Toward Other | 10 | Medium |
+| Passing Gesture | 15 | Medium |
+| Head Count Mismatch | 40 | High |
+| Extra Person in Hall | 50 | Critical |
 
 ---
 
-## 🔗 Live Demo & Links
+## 🔗 Links
 
-- 🌐 **Live Website**: [https://embedded-system-project.vercel.app/](https://embedded-system-project.vercel.app/)
-- 👨‍💻 **Portfolio**: [https://rohithdgrr.github.io/Protfolio/](https://rohithdgrr.github.io/Protfolio/)
-- 📁 **Repository**: [https://github.com/Rohithdgrr/Embedded-system-project](https://github.com/Rohithdgrr/Embedded-system-project)
+- **Repository**: [https://github.com/2303A51795/AIAC-PROJECT](https://github.com/2303A51795/AIAC-PROJECT)
 
 ---
 
@@ -212,11 +224,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Rohith** - [GitHub](https://github.com/Rohithdgrr) | [Portfolio](https://rohithdgrr.github.io/Protfolio/)
+**VIGHNESH BACHWAL**
+
+- **Roll Number**: 2303A51795
+- **Section**: BATCH 12
+- **Year**: 3RD YEAR CSE BTECH
+- **GitHub**: [https://github.com/2303A51795](https://github.com/2303A51795)
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ using React, TypeScript, Python, and YOLOv8</p>
-  <p>© 2026 ExamShield AI. All rights reserved.</p>
+  <p>Made with React, TypeScript, Python, Spring Boot, and YOLOv8</p>
+  <p>(c) 2026 ExamShield AI - AIAC PROJECT. All rights reserved.</p>
 </div>

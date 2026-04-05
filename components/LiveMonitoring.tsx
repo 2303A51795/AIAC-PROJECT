@@ -1,7 +1,7 @@
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { Camera, Shield, Play, Square, Activity, Pause, Download, Video, Maximize2, Wifi, Eye, Brain } from 'lucide-react';
-import { aiService, AIDetection } from '../frontend/services/aiService';
+import { aiService, AIDetection } from '../services/aiService';
 import { AlertLevel, ProctorAlert, DetectionStats } from '../types';
 import { ClayCard } from './ClayCard';
 import { ClayButton } from './ClayButton';
